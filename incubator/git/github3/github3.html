@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн-магазин</title>
+    <link rel="stylesheet" href="github3.css">
+</head>
+<body>
+<header>
+    <h1>Добро пожаловать в наш онлайн-магазин</h1>
+    <div class="cart-icon" id="cart-icon">
+        <img src="cart-icon.png" alt="Корзина">
+        <span id="cart-count">0</span>
+    </div>
+</header>
+
+<section class="products">
+    <!-- Карточки товаров -->
+    <article class="product-card" data-id="1">
+        <img src="product1.jpg" alt="Товар 1">
+        <h2>Название товара 1</h2>
+        <p class="price">Цена: $19.99</p>
+        <p>Описание товара Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut felis eu dui fermentum consequat vel ac dolor.</p>
+        <label for="quantity1">Количество:</label>
+        <input type="number" id="quantity1" name="quantity1" min="1" max="100" value="1">
+        <button class="add-to-cart">Добавить в корзину</button>
+    </article>
+
+</section>
+
+<div class="cart-container">
+    <div class="cart">
+        <div class="cart-header">
+            <h2>Корзина</h2>
+            <button class="close-cart">&#10005;</button>
+        </div>
+        <div class="cart-content">
+            <!-- Здесь будут отображаться товары в корзине -->
+        </div>
+        <div class="cart-footer">
+            <p>Количество товаров: <span id="item-count">0</span></p>
+            <p>Общая цена: $<span id="total-price">0.00</span></p>
+            <button id="buy-button">Купить</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2023 Онлайн-магазин. Все права защищены.</p>
+</footer>
+
+<script src="gitgub3.js"></script>
+</body>
+</html>
