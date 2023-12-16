@@ -1,4 +1,4 @@
-// data
+
 const playlist = {
     title: "Hip-Hop Hits",
     coverImageUrl: "./playlist1.png",
@@ -24,7 +24,6 @@ const playlist = {
     ],
 };
 
-// render
 renderPlaylist(playlist)
 
 function renderPlaylist(playlistForRendering) {
