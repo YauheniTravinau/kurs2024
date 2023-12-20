@@ -1,0 +1,317 @@
+/* Сброс стилей для устранения стандартных отступов и полей у элементов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основные стили для текста на странице */
+body {
+    font-style: normal;
+    line-height: normal;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Убираем стандартное оформление маркеров у списка */
+ul {
+    list-style: none;
+}
+
+section {
+    background: #eff2f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Стили для основной карточки продукта */
+.card {
+    width: 80%;
+    max-width: 1170px;
+    height: auto;
+    background: #fff;
+    box-shadow: 20px 20px 40px 0 rgba(81, 91, 117, 0.25);
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+/* Стили для левой части карточки с изображением продукта */
+.product-image-block {
+    border-right: 2px solid rgba(20, 20, 20, 0.15);
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Стили для блока превью изображений продукта */
+.previews {
+    display: flex;
+}
+
+/* Стили для каждого превью изображения */
+.preview {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Стили для основного изображения продукта */
+.main-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Стили для выделенного превью изображения */
+.preview.selected {
+    box-shadow: 8px 8px 16px 0 rgba(81, 91, 117, 0.25);
+}
+
+/* Стили для правой части карточки с информацией о продукте */
+.product-info-block {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Стили для заголовка продукта */
+.main-title {
+    color: #141414;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+/* Стили для подзаголовка продукта */
+.subtitle {
+    color: rgba(20, 20, 20, 0.40);
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+}
+
+/* Стили для описания продукта */
+.text {
+    color: rgba(20, 20, 20, 0.70);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+}
+
+/* Стили для блока с цветовыми опциями продукта */
+.colors {
+    margin-bottom: 20px;
+}
+
+/* Стили для заголовка блока с цветами */
+.title {
+    color: rgba(20, 20, 20, 0.40);
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Стили для списка цветовых опций */
+ul {
+    display: flex;
+    padding: 0;
+}
+
+/* Стили для каждого элемента списка цветов */
+li {
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+}
+
+/* Стили для круга с цветом */
+.circle {
+    width: 16px;
+    height: 16px;
+    filter: drop-shadow(2px 2px 4px rgba(81, 91, 117, 0.25));
+    border-radius: 50%;
+}
+
+/* Стили для цвета с названием blue */
+.blue {
+    background-color: #013C7D;
+}
+
+/* Стили для цвета с названием green */
+.green {
+    background-color: #63CBA7;
+}
+
+/* Стили для цвета с названием red */
+.red {
+    background-color: #D52F29;
+}
+
+/* Стили для цвета с названием black */
+.black {
+    background-color: #141414;
+}
+
+/* Стили для цвета с названием yellow */
+.yellow {
+    background-color: #F2C723;
+}
+
+/* Стили для выбранного элемента списка цветов */
+li.selected {
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    box-shadow: 2px 2px 6px 0 rgba(81, 91, 117, 0.25);
+    border-radius: 50%;
+}
+
+/* Стили для блока с количеством и ценой продукта */
+.quantity-price-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Стили для контейнера с количеством продукта */
+.quantity-container,
+.price-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Стили для выпадающего списка с количеством продукта */
+.quantity {
+    width: 83px;
+    height: 19px;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: rgba(20, 20, 20, 0.8);
+    border: none;
+    appearance: none;
+    background-image: url("./images/arrow-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right 0 top 50%;
+    margin-bottom: 10px; /* Регулируется по необходимости */
+}
+
+/* Стили для цены продукта */
+.price {
+    color: rgba(20, 20, 20, 0.80);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+/* Стили для кнопки "Добавить в корзину" */
+.btn {
+    height: 50px;
+    width: 100%;
+    background: #141414;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    margin-top: 20px;
+}
+
+/* Медиа запросы для адаптивного дизайна */
+@media only screen and (max-width: 1024px) {
+    .card {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .product-image-block {
+        border-right: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .product-info-block {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-title {
+        font-size: 32px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .circle {
+        width: 12px;
+        height: 12px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .btn {
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .card {
+        padding: 20px;
+    }
+
+    .main-title {
+        font-size: 26px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .circle {
+        width: 10px;
+        height: 10px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+
+    .btn {
+        height: 35px;
+        font-size: 14px;
+    }
+}
