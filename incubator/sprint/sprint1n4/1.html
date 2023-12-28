@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    dialog {
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+<div id="root"></div>
+<hr>
+<h1>Todolist:</h1>
+<div>
+  <ol id="todoList">
+    <li>Learn HTML <button>❌</button></li>
+    <li>Learn CSS <button>❌</button></li>
+    <li><label>
+      <input value="Learn JS">
+    </label></li>
+    <li>Learn React <button>❌</button></li>
+  </ol>
+  <button id="addTaskBtn">+ add</button>
+  <dialog id="newTaskDialog" open>
+    <h4>New Task</h4>
+    <label>
+      <input id="newTaskInput" placeholder="Input your new task"/>
+    </label>
+    <button id="confirmTaskBtn">Add</button>
+  </dialog>
+</div>
+
+<script src="index.js" type="module"></script>
+</body>
+</html>
