@@ -1,0 +1,13 @@
+data, start
+data.module.js:4 data, finish
+render.module.js:1 render, start
+render.module.js:5 render, finish
+main.js:1 main, start
+render.module.js:3 10
+main.js:5 main, finish
+
+раскидал по файлам и получил
+render, start
+render.module.js:12 render, finish
+main.js:3 main, start
+main.js:5 main, finish
