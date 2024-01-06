@@ -6,4 +6,4 @@ const giveMeRightCondition = (value1, value2, maximum) => {
     }
 }
 
-giveMeRightCondition(100, 100, 200);
+giveMeRightCondition(10, 20, 15);
