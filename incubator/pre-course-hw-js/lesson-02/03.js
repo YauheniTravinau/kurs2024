@@ -6,4 +6,5 @@ const giveMeRightNumbers = (value1, value2, maximum) => {
     }
 }
 
-giveMeRightNumbers(2, 1, 1);
+const result = giveMeRightNumbers(2, 1, 1);
+console.log(result);
