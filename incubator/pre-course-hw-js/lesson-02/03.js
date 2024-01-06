@@ -5,6 +5,4 @@ const giveMeRightNumbers = (value1, value2, maximum) => {
         return 'Something wrong!';
     }
 };
-
-const result = giveMeRightNumbers(200, 100, 100);
-console.log(result);
+giveMeRightNumbers(200, 100, 100);
