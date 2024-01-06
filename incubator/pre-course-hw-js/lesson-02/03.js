@@ -6,4 +6,6 @@ const giveMeRightNumbers = (value1, value2, maximum) => {
     }
 }
 
-giveMeRightNumbers(201, 100, 200);
+giveMeRightNumbers(100, 200, 200);
+
+
