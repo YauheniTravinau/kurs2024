@@ -6,9 +6,11 @@ let passport = {
 // Создаем копию объекта passport
 let newPassport = Object.assign({}, passport);
 
-// Меняем имя в новой копии
+// Меняем имя в копии объекта
 newPassport.name = "Ivan";
 
-// Выводим результат в консоль
-console.log("Оригинальный паспорт:", passport);
-console.log("Новый паспорт:", newPassport);
+// Выводим исходный объект passport
+console.log(passport);
+
+// Выводим измененную копию newPassport
+console.log(newPassport);
