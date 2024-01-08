@@ -7,7 +7,6 @@ let passportMarried = {
     }
 };
 
-// Создаем глубокую копию объекта passportMarried
 let passportMarried2 = { ...passportMarried, married: true, address: { ...passportMarried.address } };
 
 console.log(passportMarried);
