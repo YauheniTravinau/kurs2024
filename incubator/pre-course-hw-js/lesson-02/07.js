@@ -12,6 +12,3 @@ passportMarried2.address = { ...passportMarried.address };
 
 console.log(passportMarried);
 console.log(passportMarried2);
-
-
-console.log(passportMarried2.married);
