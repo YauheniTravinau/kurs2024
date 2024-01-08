@@ -8,5 +8,5 @@ let passportWithAddress = {
 };
 let copiedPassportWithAddress = JSON.parse(JSON.stringify(passportWithAddress));
 copiedPassportWithAddress.address.city = 'Bobryisk';
-console.log('Исходный объект passportWithAddress:', passportWithAddress);
-console.log('Измененный объект copiedPassportWithAddress:', copiedPassportWithAddress);
+console.log(passportWithAddress.address.city);
+console.log(copiedPassportWithAddress.address.city);
