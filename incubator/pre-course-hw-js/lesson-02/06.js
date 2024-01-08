@@ -1,6 +1,15 @@
+let passportWithAddress = {
+    name: "Petr",
+    surname: "Petrov",
+    address: {
+        country: "USA",
+        city: "LA"
+    }
+};
 
-let copiedPassport = JSON.parse(JSON.stringify(passportWithAddress));
 
-copiedPassport.address.city = 'Bobryisk';
+let passportWithAddressCopy = { ...passportWithAddress, address: { ...passportWithAddress.address } };
+passportWithAddressCopy.address.city = 'Bobryisk';
+
 console.log(passportWithAddress);
-console.log(copiedPassport);
+console.log(passportWithAddressCopy);
