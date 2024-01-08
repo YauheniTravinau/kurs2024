@@ -1,9 +1,3 @@
-
-function deepCopy(obj) {
-    return JSON.parse(JSON.stringify(obj));
-}
-
-
 let passportWithAddress = {
     name: "Petr",
     surname: "Petrov",
@@ -13,12 +7,9 @@ let passportWithAddress = {
     }
 };
 
+let newPassport = JSON.parse(JSON.stringify(passportWithAddress));
 
-let copiedPassport = deepCopy(passportWithAddress);
+newPassport.address.city = 'Bobryisk';
 
-
-copiedPassport.address.city = 'Bobryisk';
-
-
-console.log(passportWithAddress);
-console.log(copiedPassport);
+console.log('Оригинальный объект:', passportWithAddress);
+console.log('Новый объект:', newPassport);
