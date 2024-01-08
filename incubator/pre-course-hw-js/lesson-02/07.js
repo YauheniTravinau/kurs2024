@@ -6,9 +6,10 @@ let passportMarried = {
         city: "Bobryisk"
     }
 };
-
-let passportMarried2 = { ...passportMarried, married: true };
-passportMarried2.address = { ...passportMarried.address };
-
+let passportMarried2 = {
+    ...passportMarried,
+    married: true,
+    address: { ...passportMarried.address }
+};
 console.log(passportMarried);
 console.log(passportMarried2);
