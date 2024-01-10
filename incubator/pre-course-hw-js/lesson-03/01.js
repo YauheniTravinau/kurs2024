@@ -1,8 +1,8 @@
 const colors = ["синий", "черный", "зеленый", "красный", "желтый", "зеленый"];
 
 function createColorString() {
-    const germanyColors = ["черный", "красный", "желтый"];
-    return colors.filter(color => germanyColors.includes(color)).join('-');
+    return colors
+        .filter(color => color === "черный" || color === "красный" || color === "желтый")
+        .join("-");
 }
-
 console.log(createColorString());
